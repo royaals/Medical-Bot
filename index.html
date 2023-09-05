@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Medi-Bot</title>
+    <meta name="description" content="medical advisor ">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./index_files/css2" rel="stylesheet">
+    <script type="text/javascript" src="./index_files/email.min.js.download"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('307eKRbsZ2UAqGIvu');
+        })();
+      </script>  
+        <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                // these IDs from the previous steps
+                emailjs.sendForm('service_yiwoh5v', 'template_zymg6ki', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+   
+    </script>  
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          
+          <span class="header__logo-sub">MediBot</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="#home" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#about" class="header__link">About </a>
+            </li>
+        
+            <li class="header__link-wrapper">
+              <a href="#services" class="header__link">
+                Services
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#contact" class="header__link"> contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img src="./index_files/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu">
+            <img src="./index_files/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none">
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href=""> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href=""> About </a>
+            </li>
+            
+          
+            <li class="header__sm-menu-link">
+              <a href="#services"> services </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero" id="home">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, I am MediBot, your AI Doctor! </h1>
+        <div class="home-hero__info">
+         
+        </div>
+        <div class="home-hero__cta">
+          <a class="btn btn--bg" href="https://bot.dialogflow.com/2bb021cf-7928-4eda-aab8-d4572c6f7eb2">Appointment</a>
+        </div>
+      </div>
+     
+      
+   
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+         
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! It's
+                <strong>MediBot</strong>
+                a digital tool designed to provide quick and reliable medical information and guidance. It offers services such as symptom checking, general health advice, first aid instructions, medication information, and even appointment scheduling. Powered by a robust knowledge base and natural language processing, it's accessible through various platforms. However, it's essential to remember that a Medi Bot is not a replacement for professional medical advice and should be used for informational purposes only. Privacy and security of user data are prioritized, and the bot continually updates its knowledge to stay current with medical advancements.    
+              </p>
+              
+            
+          <div class="about__content-skills">
+            <h3 class="about__content-title">Tech Stacks</h3>
+            <div class="skills">
+              <div class="skills__skill">Dialogflow</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">Google Cloud Platform</div>
+              <div class="skills__skill">Nodejs</div>
+              <div class="skills__skill">Python</div>
+              </div>
+          </div>
+        </div>
+      </div>
+ 
+      
+   
+    </section>
+
+    <section id="services" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Services</span>
+          
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="assets/png/bot1.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Appointment Bot</h3>
+              <p class="projects__row-content-desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto exercitationem ab amet neque laudantium. In, pariatur. Ab, necessitatibus quidem repellendus tempora, ducimus, at rerum sed asperiores corporis adipisci illum porro animi itaque ex suscipit?
+              </p>
+             
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="/assets/png/bot2.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Health Bot</h3>
+              <p class="projects__row-content-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam dolorum labore, modi hic veniam, maxime vero, vel porro error a quas dolores aut iusto nesciunt sint quia! Non laboriosam nihil fuga ipsa eligendi maiores!
+              </p>
+          
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="/assets/png/bot3.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Medical Queries</h3>
+              <p class="projects__row-content-desc">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat animi in alias numquam? Veritatis a porro eius, repellendus laudantium vero delectus ipsum earum possimus iusto fugit consequatur commodi eveniet reprehenderit doloribus quisquam aliquid quod.
+              </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+        
+        </h2>
+        <div class="contact__form-container">
+          <form action="" class="contact__form" method="get" id="contact-form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input required="" placeholder="Enter Your Name" type="text" class="contact__form-input" name="name" id="name">
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input required="" placeholder="Enter Your Email" type="text" class="contact__form-input" name="email" id="email">
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea required="" cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message" name="message" id="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+
+       
+   
+
+
+    <script src="./index_files/index.js.download"></script>
+  
+
+</div></div></footer></body></html>

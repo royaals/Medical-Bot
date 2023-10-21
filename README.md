@@ -66,4 +66,23 @@ streamlit run app.py
 ```
 2. Use the interface to interact with the Naive Bayes classifier.
 
+# Mental Health Chatbot
+
+This is a mental health chatbot that uses Google Cloud's AI Platform and Vertex AI's language models to provide empathetic responses to users expressing feelings of stress, anxiety, depression, and suicidal thoughts.
+
+## Requirements
+
+- Google Cloud SDK
+- Vertex AI
+- Gradio
+
+## Installation
+
+First, install the required packages:
+
+```python
+pip install google-cloud-aiplatform
+pip install gradio
+```
+
 
